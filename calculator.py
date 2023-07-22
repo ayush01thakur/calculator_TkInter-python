@@ -162,6 +162,7 @@ def point():
         entry.insert(0,f_num+dot)
 
 
+
 # functional buttons 
 
 button_exp= tk.Button(buttonframe, text="e", padx=18, pady=18, command=exp)
@@ -245,5 +246,6 @@ button_add.grid(row=4, column=3, sticky=tk.W+tk.E)
 button_equal=tk.Button(buttonframe, text='=', pady=20, bg='#91ffa7', command=equal)
 button_equal.grid(row=5, column=3, sticky=tk.W+tk.E)
 
-# executing the window...
+
+# execute the window
 root.mainloop()
