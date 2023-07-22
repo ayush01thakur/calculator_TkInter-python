@@ -16,8 +16,6 @@ root.geometry("300x430")
 entry= tk.Entry(root, border=4)
 entry.pack(padx=10, pady=10, fill=tk.X)
 
-# frame= tk.LabelFrame(root, text="calculator", padx=5, pady=5)
-# frame.pack(padx=3, pady=3, fill=tk.X)
 
 #(GRID)BUTTON FRAME INSIDE THE PACK WITH PRE-DEFINED WIDTH/HEIGHT OF BLOCKS 
 
@@ -163,14 +161,6 @@ def point():
         entry.delete(0, tk.END)
         entry.insert(0,f_num+dot)
 
-        # z=[]
-        # for i in f_num:
-        #     z.append(i)
-        # z=z.append('.')
-        # k= "".join(z)
-        # entry.insert(0, k)
-## I want to know the logic behind the working of the decimal in my programme
-
 
 # functional buttons 
 
@@ -255,5 +245,5 @@ button_add.grid(row=4, column=3, sticky=tk.W+tk.E)
 button_equal=tk.Button(buttonframe, text='=', pady=20, bg='#91ffa7', command=equal)
 button_equal.grid(row=5, column=3, sticky=tk.W+tk.E)
 
-
+# executing the window...
 root.mainloop()
